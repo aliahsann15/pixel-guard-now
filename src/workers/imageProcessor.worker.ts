@@ -57,15 +57,24 @@ self.onmessage = async (e: MessageEvent<ProcessImageMessage>) => {
 
     postMessage({ type: 'progress', progress: 50 } as ProcessImageResponse);
 
-    // Resize using pica (high quality)
+    // Resize using pica (high quality) with fallback to native
     const destCanvas = new OffscreenCanvas(targetWidth, targetHeight);
-    await pica.resize(sourceCanvas, destCanvas, {
-      quality: 3, // High quality
-      alpha: true,
-      unsharpAmount: 80,
-      unsharpRadius: 0.6,
-      unsharpThreshold: 2,
-    });
+    
+    try {
+      await pica.resize(sourceCanvas, destCanvas, {
+        quality: 3, // High quality
+        alpha: true,
+        unsharpAmount: 80,
+        unsharpRadius: 0.6,
+        unsharpThreshold: 2,
+      });
+    } catch (error) {
+      // Fallback to native canvas resize if Pica fails (e.g., fingerprinting protection)
+      console.warn('Pica resize failed, using native canvas resize:', error);
+      const destCtx = destCanvas.getContext('2d');
+      if (!destCtx) throw new Error('Failed to get destination context');
+      destCtx.drawImage(sourceCanvas, 0, 0, targetWidth, targetHeight);
+    }
 
     postMessage({ type: 'progress', progress: 70 } as ProcessImageResponse);
 
