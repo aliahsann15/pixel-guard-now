@@ -1,73 +1,55 @@
-# Welcome to your Lovable project
+# 🛡️ PixelGuard – Free Privacy-First Image Compressor & Resizer
 
-## Project info
+PixelGuard is a fast, lightweight, and 100% privacy-focused online tool that lets users compress and resize images directly inside their browser. No uploads, no servers, no tracking — everything happens on the client side.
 
-**URL**: https://lovable.dev/projects/cd997fd0-5ee6-495b-9e27-32f0be98301d
+This repository contains the source code for the PixelGuard web application.
 
-## How can I edit this code?
+---
 
-There are several ways of editing your application.
+## ✅ Live Website
+**URL:** https://www.pixelguard.site
 
-**Use Lovable**
+---
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/cd997fd0-5ee6-495b-9e27-32f0be98301d) and start prompting.
+## ✅ About PixelGuard
 
-Changes made via Lovable will be committed automatically to this repo.
+PixelGuard was built with one mission:
 
-**Use your preferred IDE**
+> **Give users a secure and completely offline way to optimize images — without sacrificing quality.**
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+✔ Compress and resize images instantly  
+✔ Supports JPG, PNG, WEBP & more  
+✔ No storage, no uploads — your files never leave your device  
+✔ Built for speed, privacy, and accessibility
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+---
 
-Follow these steps:
+## ✅ Editing the Project
+
+You can update PixelGuard in any of these ways:
+
+### ✅ 1. Edit using **Lovable**
+- Visit the project inside Lovable
+- Prompt changes in plain English
+- Lovable will automatically commit updates to this GitHub repo
+
+### ✅ 2. Edit Locally in Your Own IDE
+
+Requirements:
+- Node.js & npm installed
+- (Recommended) Install via NVM → https://github.com/nvm-sh/nvm#installing-and-updating
+
+Steps:
 
 ```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+# 1. Clone the repository
+git clone <YOUR_GIT_REPO_URL>
 
-# Step 2: Navigate to the project directory.
+# 2. Open project folder
 cd <YOUR_PROJECT_NAME>
 
-# Step 3: Install the necessary dependencies.
-npm i
+# 3. Install dependencies
+npm install
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
+# 4. Start development server
 npm run dev
-```
-
-**Edit a file directly in GitHub**
-
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
-
-**Use GitHub Codespaces**
-
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
-
-## What technologies are used for this project?
-
-This project is built with:
-
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
-
-## How can I deploy this project?
-
-Simply open [Lovable](https://lovable.dev/projects/cd997fd0-5ee6-495b-9e27-32f0be98301d) and click on Share -> Publish.
-
-## Can I connect a custom domain to my Lovable project?
-
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
