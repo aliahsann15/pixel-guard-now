@@ -70,7 +70,6 @@ self.onmessage = async (e: MessageEvent<ProcessImageMessage>) => {
       });
     } catch (error) {
       // Fallback to native canvas resize if Pica fails (e.g., fingerprinting protection)
-      console.warn('Pica resize failed, using native canvas resize:', error);
       const destCtx = destCanvas.getContext('2d');
       if (!destCtx) throw new Error('Failed to get destination context');
       destCtx.drawImage(sourceCanvas, 0, 0, targetWidth, targetHeight);
