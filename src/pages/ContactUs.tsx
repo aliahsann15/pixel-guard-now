@@ -43,10 +43,10 @@ const ContactUs = () => {
             </CardHeader>
             <CardContent>
               <a 
-                href="mailto:support@pixelguard.app" 
+                href="mailto:aliahsann15@gmail.com" 
                 className="text-primary hover:underline text-lg font-medium"
               >
-                support@pixelguard.app
+                aliahsann15@gmail.com
               </a>
               <p className="text-sm text-muted-foreground mt-2">
                 We typically respond within 24-48 hours
@@ -68,10 +68,10 @@ const ContactUs = () => {
             </CardHeader>
             <CardContent>
               <a 
-                href="mailto:feedback@pixelguard.app" 
+                href="mailto:aliahsann15@gmail.com" 
                 className="text-primary hover:underline text-lg font-medium"
               >
-                feedback@pixelguard.app
+                aliahsann15@gmail.com
               </a>
               <p className="text-sm text-muted-foreground mt-2">
                 Share your suggestions and ideas
@@ -113,8 +113,8 @@ const ContactUs = () => {
               </h3>
               <p className="text-muted-foreground text-sm">
                 Yes! If you're interested in partnerships, integrations, or business inquiries, please email us at{' '}
-                <a href="mailto:business@pixelguard.app" className="text-primary hover:underline">
-                  business@pixelguard.app
+                <a href="mailto:aliahsann15@gmail.com" className="text-primary hover:underline">
+                  aliahsann15@gmail.com
                 </a>
               </p>
             </div>

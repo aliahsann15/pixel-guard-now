@@ -75,7 +75,7 @@ const Footer = () => {
           <div className="flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-muted-foreground">
             <p>© {currentYear} PixelGuard. All rights reserved.</p>
             <p className="text-center md:text-right">
-              Built with privacy in mind. Powered by client-side processing.
+              Privacy-first image compression. Powered by client-side processing.
             </p>
           </div>
         </div>
