@@ -2,6 +2,7 @@ import { Shield, Mail, MessageSquare, Globe } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
+import AdSense from '@/components/AdSense';
 
 const ContactUs = () => {
   return (
@@ -26,6 +27,14 @@ const ContactUs = () => {
           <p className="text-muted-foreground text-lg">
             Have questions or feedback? We'd love to hear from you.
           </p>
+        </div>
+
+        {/* Ad after header */}
+        <div className="mb-8">
+          <AdSense 
+            adSlot="1234567898" 
+            adFormat="horizontal"
+          />
         </div>
 
         <div className="grid md:grid-cols-2 gap-6 mb-12">
@@ -158,6 +167,14 @@ const ContactUs = () => {
               FAQ section
             </button>
           </p>
+        </div>
+
+        {/* Ad at bottom */}
+        <div className="mt-8">
+          <AdSense 
+            adSlot="1234567899" 
+            adFormat="rectangle"
+          />
         </div>
       </main>
 

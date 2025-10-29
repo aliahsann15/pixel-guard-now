@@ -1,6 +1,7 @@
 import { Shield } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
+import AdSense from '@/components/AdSense';
 
 const PrivacyPolicy = () => {
   return (
@@ -22,6 +23,14 @@ const PrivacyPolicy = () => {
       <main className="container mx-auto px-4 sm:px-6 lg:px-8 py-12 max-w-4xl">
         <h1 className="text-4xl font-bold mb-8">Privacy Policy</h1>
         <p className="text-muted-foreground mb-8">Last updated: {new Date().toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })}</p>
+
+        {/* Ad at top of content */}
+        <div className="mb-8">
+          <AdSense 
+            adSlot="1234567894" 
+            adFormat="horizontal"
+          />
+        </div>
 
         <div className="space-y-8 text-foreground">
           <section>
@@ -138,6 +147,14 @@ const PrivacyPolicy = () => {
               If you have questions about this Privacy Policy, please <Link to="/contact" className="text-primary hover:underline">contact us</Link>.
             </p>
           </section>
+        </div>
+
+        {/* Ad at bottom of content */}
+        <div className="mt-8">
+          <AdSense 
+            adSlot="1234567895" 
+            adFormat="rectangle"
+          />
         </div>
       </main>
 
