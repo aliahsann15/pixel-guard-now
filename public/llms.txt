@@ -1,0 +1,40 @@
+# PixelGuard - Free Privacy-First Image Compressor & Resizer
+
+> https://pixelguard.site
+
+## Overview
+PixelGuard is a fast, secure, and 100% client-side image compression and resizing tool. All processing happens in the browser - no uploads, no servers, no tracking.
+
+## Key Features
+- Compress images (JPEG, PNG, WebP, AVIF)
+- Resize images with custom dimensions
+- Batch processing support
+- Privacy-first: files never leave your device
+- Free to use
+- No registration required
+
+## Main Pages
+- Homepage: https://pixelguard.site/ - Main image compression tool
+- Privacy Policy: https://pixelguard.site/privacy-policy - Privacy practices
+- Terms of Service: https://pixelguard.site/terms-of-service - Terms and conditions
+- Contact Us: https://pixelguard.site/contact-us - Contact information
+
+## Technology Stack
+- Client-side processing using Web Workers
+- Browser Image Compression API
+- React + TypeScript
+- No backend required
+
+## Use Cases
+- Optimize images for web
+- Reduce file sizes for faster loading
+- Prepare images for social media
+- Batch resize photos
+- Compress without quality loss
+
+## SEO Keywords
+free image compressor, browser image resizer, secure photo compression online, image compressor no upload, client-side image compressor, compress image online free, resize photo browser, privacy-first image tool
+
+## Contact
+Email: aliahsann15@gmail.com
+Website: https://pixelguard.site
