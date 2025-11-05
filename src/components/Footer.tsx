@@ -7,7 +7,7 @@ const Footer = () => {
   return (
     <footer className="bg-secondary text-secondary-foreground py-12">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid md:grid-cols-4 gap-8 mb-8">
+        <div className="grid md:grid-cols-5 gap-8 mb-8">
           <div className="md:col-span-2">
             <div className="flex items-center gap-2 mb-4">
               <Shield className="h-6 w-6 text-primary" />
@@ -45,6 +45,22 @@ const Footer = () => {
                 >
                   How it works
                 </button>
+              </li>
+            </ul>
+          </div>
+
+          <div>
+            <h3 className="font-semibold mb-4">Resources</h3>
+            <ul className="space-y-2 text-sm">
+              <li>
+                <Link to="/about" className="text-muted-foreground hover:text-foreground transition-colors">
+                  About Us
+                </Link>
+              </li>
+              <li>
+                <Link to="/blog" className="text-muted-foreground hover:text-foreground transition-colors">
+                  Blog
+                </Link>
               </li>
             </ul>
           </div>

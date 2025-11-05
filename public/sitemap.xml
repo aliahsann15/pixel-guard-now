@@ -7,7 +7,7 @@
   <!-- Homepage -->
   <url>
     <loc>https://pixelguard.site/</loc>
-    <lastmod>2025-10-30</lastmod>
+    <lastmod>2025-11-05</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
@@ -15,7 +15,7 @@
   <!-- Privacy Policy -->
   <url>
     <loc>https://pixelguard.site/privacy-policy</loc>
-    <lastmod>2025-10-30</lastmod>
+    <lastmod>2025-11-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
@@ -23,17 +23,33 @@
   <!-- Terms of Service -->
   <url>
     <loc>https://pixelguard.site/terms-of-service</loc>
-    <lastmod>2025-10-30</lastmod>
+    <lastmod>2025-11-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
 
   <!-- Contact Us -->
   <url>
-    <loc>https://pixelguard.site/contact-us</loc>
-    <lastmod>2025-10-30</lastmod>
+    <loc>https://pixelguard.site/contact</loc>
+    <lastmod>2025-11-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+  </url>
+
+  <!-- About Us -->
+  <url>
+    <loc>https://pixelguard.site/about</loc>
+    <lastmod>2025-11-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Blog -->
+  <url>
+    <loc>https://pixelguard.site/blog</loc>
+    <lastmod>2025-11-05</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
   </url>
 
 </urlset>

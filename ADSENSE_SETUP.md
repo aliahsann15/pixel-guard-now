@@ -60,6 +60,10 @@ Once your site is approved, create ad units:
 - **Slot 1234567897**: Terms of Service - Bottom (Rectangle)
 - **Slot 1234567898**: Contact Us - After Header (Horizontal)
 - **Slot 1234567899**: Contact Us - Bottom (Rectangle)
+- **Slot 1234567900**: About Us - Top (Horizontal)
+- **Slot 1234567901**: About Us - Bottom (Rectangle)
+- **Slot 1234567902**: Blog - Top (Horizontal)
+- **Slot 1234567903**: Blog - Bottom (Rectangle)
 
 3. For each ad unit:
    - Choose **Display ads**
@@ -68,7 +72,7 @@ Once your site is approved, create ad units:
    - Replace the placeholder IDs in your code
 
 ### 6. Update Ad Slot IDs
-Open `src/pages/Index.tsx`, `src/pages/PrivacyPolicy.tsx`, `src/pages/TermsOfService.tsx`, and `src/pages/ContactUs.tsx`.
+Open `src/pages/Index.tsx`, `src/pages/PrivacyPolicy.tsx`, `src/pages/TermsOfService.tsx`, `src/pages/ContactUs.tsx`, `src/pages/About.tsx`, and `src/pages/Blog.tsx`.
 
 Replace placeholder `adSlot` values with your actual ad unit IDs from AdSense.
 
@@ -96,6 +100,14 @@ Example:
 ### Contact Page (`ContactUs.tsx`)
 - ✅ After header - early placement
 - ✅ Bottom - after viewing contact info
+
+### About Us Page (`About.tsx`)
+- ✅ After hero section - catches visitor attention
+- ✅ Bottom of content - final impression
+
+### Blog Page (`Blog.tsx`)
+- ✅ Top of content - immediate visibility
+- ✅ Bottom of content - after viewing blog posts
 
 ## Ad Formats Used
 

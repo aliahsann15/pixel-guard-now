@@ -1,5 +1,6 @@
 import { Shield } from 'lucide-react';
 import { Button } from '@/components/ui/button';
+import { Link } from 'react-router-dom';
 
 const Header = () => {
   const scrollToSection = (id: string) => {
@@ -24,23 +25,23 @@ const Header = () => {
               Compress
             </button>
             <button
-              onClick={() => scrollToSection('how-it-works')}
-              className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors"
-            >
-              How it works
-            </button>
-            <button
               onClick={() => scrollToSection('features')}
               className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors"
             >
               Features
             </button>
-            <button
-              onClick={() => scrollToSection('faq')}
+            <Link
+              to="/about"
               className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors"
             >
-              FAQ
-            </button>
+              About
+            </Link>
+            <Link
+              to="/blog"
+              className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors"
+            >
+              Blog
+            </Link>
           </nav>
 
           <Button 

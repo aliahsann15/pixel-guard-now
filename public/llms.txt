@@ -15,9 +15,11 @@ PixelGuard is a fast, secure, and 100% client-side image compression and resizin
 
 ## Main Pages
 - Homepage: https://pixelguard.site/ - Main image compression tool
+- About Us: https://pixelguard.site/about - Company information and mission
+- Blog: https://pixelguard.site/blog - Image optimization guides and tips
 - Privacy Policy: https://pixelguard.site/privacy-policy - Privacy practices
 - Terms of Service: https://pixelguard.site/terms-of-service - Terms and conditions
-- Contact Us: https://pixelguard.site/contact-us - Contact information
+- Contact Us: https://pixelguard.site/contact - Contact information
 
 ## Technology Stack
 - Client-side processing using Web Workers
