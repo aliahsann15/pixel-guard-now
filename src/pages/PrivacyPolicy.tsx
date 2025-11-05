@@ -1,24 +1,12 @@
-import { Shield } from 'lucide-react';
 import { Link } from 'react-router-dom';
-import { Button } from '@/components/ui/button';
+import Header from '@/components/Header';
+import Footer from '@/components/Footer';
 import AdSense from '@/components/AdSense';
 
 const PrivacyPolicy = () => {
   return (
     <div className="min-h-screen bg-background">
-      <header className="border-b border-border bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60 sticky top-0 z-50">
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-4">
-          <div className="flex items-center justify-between">
-            <Link to="/" className="flex items-center gap-2">
-              <Shield className="h-6 w-6 text-primary" />
-              <span className="text-xl font-bold">PixelGuard</span>
-            </Link>
-            <Button asChild variant="outline">
-              <Link to="/">Back to Home</Link>
-            </Button>
-          </div>
-        </div>
-      </header>
+      <Header />
 
       <main className="container mx-auto px-4 sm:px-6 lg:px-8 py-12 max-w-4xl">
         <h1 className="text-4xl font-bold mb-8">Privacy Policy</h1>
@@ -158,11 +146,7 @@ const PrivacyPolicy = () => {
         </div>
       </main>
 
-      <footer className="border-t border-border mt-16 py-8">
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8 text-center text-sm text-muted-foreground">
-          <p>© {new Date().getFullYear()} PixelGuard. All rights reserved.</p>
-        </div>
-      </footer>
+      <Footer />
     </div>
   );
 };

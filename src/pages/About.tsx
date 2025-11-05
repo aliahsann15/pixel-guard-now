@@ -1,5 +1,7 @@
 import { Link } from 'react-router-dom';
-import { Shield, ArrowLeft, Zap, Globe, Users, Heart, Lock, Sparkles } from 'lucide-react';
+import { Zap, Globe, Users, Heart, Lock, Sparkles, Shield } from 'lucide-react';
+import Header from '@/components/Header';
+import Footer from '@/components/Footer';
 import { Card } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import AdSense from '@/components/AdSense';
@@ -7,21 +9,7 @@ import AdSense from '@/components/AdSense';
 const About = () => {
   return (
     <div className="min-h-screen bg-background">
-      {/* Header */}
-      <header className="sticky top-0 z-50 bg-background/80 backdrop-blur-sm border-b border-border">
-        <div className="container mx-auto px-4 py-4 flex items-center justify-between">
-          <Link to="/" className="flex items-center gap-2">
-            <Shield className="h-8 w-8 text-primary" />
-            <span className="text-xl font-bold text-foreground">PixelGuard</span>
-          </Link>
-          <Link to="/">
-            <Button variant="outline" size="sm">
-              <ArrowLeft className="mr-2 h-4 w-4" />
-              Back to Home
-            </Button>
-          </Link>
-        </div>
-      </header>
+      <Header />
 
       <main className="container mx-auto px-4 py-12 max-w-5xl">
         {/* Hero Section */}
@@ -269,16 +257,7 @@ const About = () => {
         </div>
       </main>
 
-      {/* Footer */}
-      <footer className="border-t border-border mt-16 py-8 bg-card">
-        <div className="container mx-auto px-4 text-center">
-          <p className="text-sm text-muted-foreground">
-            © {new Date().getFullYear()} PixelGuard. All rights reserved. | 
-            <Link to="/privacy-policy" className="hover:text-primary ml-2">Privacy Policy</Link> | 
-            <Link to="/terms-of-service" className="hover:text-primary ml-2">Terms of Service</Link>
-          </p>
-        </div>
-      </footer>
+      <Footer />
     </div>
   );
 };
