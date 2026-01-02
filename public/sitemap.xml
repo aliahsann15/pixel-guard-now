@@ -7,7 +7,7 @@
   <!-- Homepage -->
   <url>
     <loc>https://pixelguard.site/</loc>
-    <lastmod>2025-11-05</lastmod>
+    <lastmod>2024-12-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
@@ -15,7 +15,7 @@
   <!-- Privacy Policy -->
   <url>
     <loc>https://pixelguard.site/privacy-policy</loc>
-    <lastmod>2025-11-05</lastmod>
+    <lastmod>2024-12-15</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
@@ -23,7 +23,7 @@
   <!-- Terms of Service -->
   <url>
     <loc>https://pixelguard.site/terms-of-service</loc>
-    <lastmod>2025-11-05</lastmod>
+    <lastmod>2024-12-15</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
@@ -31,7 +31,7 @@
   <!-- Contact Us -->
   <url>
     <loc>https://pixelguard.site/contact</loc>
-    <lastmod>2025-11-05</lastmod>
+    <lastmod>2024-12-15</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -39,17 +39,60 @@
   <!-- About Us -->
   <url>
     <loc>https://pixelguard.site/about</loc>
-    <lastmod>2025-11-05</lastmod>
+    <lastmod>2024-12-15</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
 
-  <!-- Blog -->
+  <!-- Blog Index -->
   <url>
     <loc>https://pixelguard.site/blog</loc>
-    <lastmod>2025-11-05</lastmod>
+    <lastmod>2024-12-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
+  </url>
+
+  <!-- Blog Posts -->
+  <url>
+    <loc>https://pixelguard.site/blog/why-client-side-image-compression-matters-for-privacy</loc>
+    <lastmod>2024-12-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://pixelguard.site/blog/complete-guide-image-formats-jpeg-png-webp-avif</loc>
+    <lastmod>2024-12-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://pixelguard.site/blog/how-to-optimize-images-for-web-performance</loc>
+    <lastmod>2024-12-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://pixelguard.site/blog/best-image-sizes-social-media-platforms-2025</loc>
+    <lastmod>2024-11-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://pixelguard.site/blog/batch-image-processing-save-time-bulk-compression</loc>
+    <lastmod>2024-11-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://pixelguard.site/blog/understanding-image-quality-file-size-trade-offs</loc>
+    <lastmod>2024-11-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
   </url>
 
 </urlset>
