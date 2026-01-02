@@ -4,7 +4,6 @@ import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import { Card } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
-import AdSense from '@/components/AdSense';
 
 const About = () => {
   return (
@@ -20,15 +19,6 @@ const About = () => {
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
             Your trusted, privacy-first image compression and resizing tool. Built for photographers, designers, bloggers, and anyone who values both quality and privacy.
           </p>
-        </div>
-
-        {/* AdSense Ad */}
-        <div className="mb-12">
-          <AdSense 
-            adSlot="1234567900" 
-            adFormat="horizontal"
-            className="max-w-4xl mx-auto"
-          />
         </div>
 
         {/* Mission Section */}
@@ -138,15 +128,6 @@ const About = () => {
             </p>
           </div>
         </Card>
-
-        {/* AdSense Ad */}
-        <div className="mb-12">
-          <AdSense 
-            adSlot="1234567901" 
-            adFormat="rectangle"
-            className="max-w-4xl mx-auto"
-          />
-        </div>
 
         {/* Who Uses PixelGuard */}
         <div className="mb-12">
