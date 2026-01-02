@@ -4,7 +4,6 @@ import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import { Card } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
-import AdSense from '@/components/AdSense';
 import { blogPosts } from '@/data/blogPosts';
 
 const Blog = () => {
@@ -21,15 +20,6 @@ const Blog = () => {
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
             Tips, guides, and best practices for image compression, web performance, and privacy-focused image processing.
           </p>
-        </div>
-
-        {/* AdSense Ad */}
-        <div className="mb-12">
-          <AdSense 
-            adSlot="1234567902" 
-            adFormat="horizontal"
-            className="max-w-4xl mx-auto"
-          />
         </div>
 
         {/* Blog Posts Grid */}
@@ -61,15 +51,6 @@ const Blog = () => {
               </Card>
             </Link>
           ))}
-        </div>
-
-        {/* AdSense Ad */}
-        <div className="mb-12">
-          <AdSense 
-            adSlot="1234567903" 
-            adFormat="rectangle"
-            className="max-w-4xl mx-auto"
-          />
         </div>
 
         {/* Newsletter Signup */}

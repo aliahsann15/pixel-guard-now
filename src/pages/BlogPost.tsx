@@ -4,7 +4,6 @@ import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import { Button } from '@/components/ui/button';
 import { Card } from '@/components/ui/card';
-import AdSense from '@/components/AdSense';
 import { getBlogPostBySlug, blogPosts } from '@/data/blogPosts';
 
 const BlogPost = () => {
@@ -70,14 +69,6 @@ const BlogPost = () => {
             </div>
           </header>
 
-          {/* AdSense Ad */}
-          <div className="mb-8">
-            <AdSense 
-              adSlot="1234567904" 
-              adFormat="horizontal"
-            />
-          </div>
-
           {/* Article Content */}
           <div 
             className="prose prose-lg dark:prose-invert max-w-none mb-12
@@ -110,13 +101,6 @@ const BlogPost = () => {
             </Link>
           </Card>
 
-          {/* AdSense Ad */}
-          <div className="mb-12">
-            <AdSense 
-              adSlot="1234567905" 
-              adFormat="rectangle"
-            />
-          </div>
         </article>
 
         {/* Related Posts */}

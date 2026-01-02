@@ -1,7 +1,6 @@
 import { Link } from 'react-router-dom';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
-import AdSense from '@/components/AdSense';
 
 const TermsOfService = () => {
   return (
@@ -11,14 +10,6 @@ const TermsOfService = () => {
       <main className="container mx-auto px-4 sm:px-6 lg:px-8 py-12 max-w-4xl">
         <h1 className="text-4xl font-bold mb-8">Terms of Service</h1>
         <p className="text-muted-foreground mb-8">Last updated: {new Date().toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })}</p>
-
-        {/* Ad at top of content */}
-        <div className="mb-8">
-          <AdSense 
-            adSlot="1234567896" 
-            adFormat="horizontal"
-          />
-        </div>
 
         <div className="space-y-8 text-foreground">
           <section>
@@ -179,13 +170,6 @@ const TermsOfService = () => {
           </section>
         </div>
 
-        {/* Ad at bottom of content */}
-        <div className="mt-8">
-          <AdSense 
-            adSlot="1234567897" 
-            adFormat="rectangle"
-          />
-        </div>
       </main>
 
       <Footer />
