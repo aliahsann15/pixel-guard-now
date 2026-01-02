@@ -64,7 +64,7 @@ In an age where data privacy is increasingly important, choosing tools that resp
 
 Try PixelGuard today and experience truly private image compression.
     `,
-    date: '2025-01-15',
+    date: '2024-12-15',
     readTime: '5 min read',
     category: 'Privacy'
   },
@@ -161,7 +161,7 @@ There's no one-size-fits-all answer. The best format depends on your specific ne
 
 PixelGuard supports all these formats, making it easy to convert and optimize for any use case.
     `,
-    date: '2025-01-10',
+    date: '2024-12-10',
     readTime: '8 min read',
     category: 'Guide'
   },
@@ -252,7 +252,7 @@ Image optimization is one of the highest-impact performance improvements you can
 
 Use PixelGuard to quickly compress and convert your images while maintaining your privacy.
     `,
-    date: '2025-01-05',
+    date: '2024-12-05',
     readTime: '6 min read',
     category: 'Web Performance'
   },
@@ -374,7 +374,7 @@ Getting your image sizes right for social media ensures your content looks profe
 
 Use PixelGuard to resize and compress your images to these exact dimensions while maintaining optimal quality. Our batch processing makes it easy to prepare images for multiple platforms at once.
     `,
-    date: '2024-12-28',
+    date: '2024-11-28',
     readTime: '7 min read',
     category: 'Social Media'
   },
@@ -481,7 +481,7 @@ Batch processing is essential for anyone working with images regularly. PixelGua
 
 Start batch processing today and reclaim hours of your time.
     `,
-    date: '2024-12-20',
+    date: '2024-11-20',
     readTime: '4 min read',
     category: 'Tips & Tricks'
   },
@@ -616,7 +616,7 @@ There's no universal "best" quality setting. The right choice depends on your sp
 
 Remember: you can always compress a high-quality original, but you can never restore quality once it's lost.
     `,
-    date: '2024-12-15',
+    date: '2024-11-15',
     readTime: '6 min read',
     category: 'Guide'
   }
