@@ -62,8 +62,8 @@ const ToolUI = () => {
       setCompressedSize(0);
 
       toast({
-        title: 'Image loaded',
-        description: 'Adjust settings and click "Compress & Download"',
+        title: 'Image ready to optimize',
+        description: 'Choose quality, format, and size, then preview your compressed image',
       });
     } catch (error) {
       toast({
@@ -174,7 +174,10 @@ const ToolUI = () => {
   }, [originalUrl, compressedUrl]);
 
   return (
-    <section id="tool" className="py-16 bg-background">
+    <section id="tool" className="relative overflow-hidden bg-[#071220] py-24 sm:py-32">
+      <div className="absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-white/15 to-transparent" />
+      <div className="absolute -left-24 top-24 h-96 w-96 rounded-full bg-primary/10 blur-3xl" />
+      <div className="absolute -right-24 bottom-16 h-96 w-96 rounded-full bg-success/10 blur-3xl" />
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -182,12 +185,12 @@ const ToolUI = () => {
           viewport={{ once: true }}
           className="text-center mb-12"
         >
-          <h2 className="text-3xl sm:text-4xl font-bold text-foreground mb-4">
-            Compress Your Images
+          <h2 className="text-3xl sm:text-5xl font-bold text-foreground mb-4">
+            Free Online Image Compressor
           </h2>
-          <div className="inline-flex items-center gap-2 bg-success/10 text-success px-4 py-2 rounded-full text-sm font-medium">
+          <div className="inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/[0.07] px-4 py-2 text-sm font-medium text-success shadow-2xl backdrop-blur-xl">
             <Shield className="h-4 w-4" />
-            <span>Processing locally — files never leave your device</span>
+            <span>Compress JPEG, PNG, WebP, BMP, and TIFF files locally in your browser</span>
           </div>
         </motion.div>
 
@@ -218,9 +221,9 @@ const ToolUI = () => {
                     onDownload={handleDownload}
                   />
                 ) : (
-                  <div className="flex items-center justify-center border-2 border-dashed border-border rounded-2xl p-12">
+                  <div className="flex min-h-[22rem] items-center justify-center rounded-[1.75rem] border border-dashed border-white/15 bg-white/[0.035] p-12 shadow-card backdrop-blur-xl">
                     <p className="text-muted-foreground">
-                      Compressed image will appear here
+                      Your optimized image preview will appear here
                     </p>
                   </div>
                 )}
@@ -254,7 +257,7 @@ const ToolUI = () => {
                   size="lg"
                   onClick={processImage}
                   disabled={isProcessing}
-                  className="bg-primary text-primary-foreground hover:bg-primary/90 min-w-[200px]"
+                  className="min-w-[200px] rounded-2xl bg-white font-semibold text-slate-950 shadow-[0_18px_48px_rgba(37,99,235,0.24)] hover:bg-slate-100"
                 >
                   {isProcessing ? (
                     <>
@@ -271,6 +274,7 @@ const ToolUI = () => {
                   variant="outline"
                   onClick={handleReset}
                   disabled={isProcessing}
+                  className="rounded-2xl border-white/15 bg-white/5 font-semibold text-white hover:bg-white/10 hover:text-white"
                 >
                   Reset
                 </Button>

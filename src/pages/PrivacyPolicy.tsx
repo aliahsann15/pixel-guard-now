@@ -1,17 +1,23 @@
 import { Link } from 'react-router-dom';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
+import SEO from '@/components/SEO';
 
 const PrivacyPolicy = () => {
   return (
-    <div className="min-h-screen bg-background">
+    <div className="min-h-screen overflow-x-hidden bg-background">
+      <SEO
+        title="Privacy Policy — PixelGuard Private Image Compressor"
+        description="Read PixelGuard's privacy policy for browser-based image compression. Learn how local processing helps keep your photos and files private."
+        path="/privacy-policy"
+      />
       <Header />
 
-      <main className="container mx-auto px-4 sm:px-6 lg:px-8 py-12 max-w-4xl">
-        <h1 className="text-4xl font-bold mb-8">Privacy Policy</h1>
+      <main className="container mx-auto max-w-4xl px-4 py-16 sm:px-6 sm:py-24 lg:px-8">
+        <h1 className="mb-8 text-4xl font-bold sm:text-6xl">Privacy Policy</h1>
         <p className="text-muted-foreground mb-8">Last updated: {new Date().toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })}</p>
 
-        <div className="space-y-8 text-foreground">
+        <div className="glass-panel space-y-8 rounded-[2rem] p-6 text-foreground sm:p-8">
           <section>
             <h2 className="text-2xl font-semibold mb-4">Introduction</h2>
             <p className="text-muted-foreground leading-relaxed">
@@ -37,7 +43,7 @@ const PrivacyPolicy = () => {
             <h2 className="text-2xl font-semibold mb-4">Information We Collect</h2>
             <h3 className="text-xl font-medium mb-2">Analytics Data</h3>
             <p className="text-muted-foreground leading-relaxed mb-4">
-              We use Google Analytics to understand how visitors use our website. This includes:
+              We use privacy-conscious page-level analytics to understand how visitors use our website. This may include:
             </p>
             <ul className="list-disc list-inside space-y-2 text-muted-foreground ml-4">
               <li>Page views and navigation patterns</li>
@@ -47,14 +53,14 @@ const PrivacyPolicy = () => {
               <li>Referral source</li>
             </ul>
             <p className="text-muted-foreground leading-relaxed mt-4">
-              <strong className="text-foreground">Important:</strong> Google Analytics only collects page-level information. It does not and cannot access or track your images.
+              <strong className="text-foreground">Important:</strong> Analytics only collects page-level information. It does not and cannot access or track the images you process in your browser.
             </p>
           </section>
 
           <section>
             <h2 className="text-2xl font-semibold mb-4">Cookies and Tracking</h2>
             <p className="text-muted-foreground leading-relaxed mb-4">
-              We use cookies for analytics purposes through Google Analytics and to serve advertisements through Google AdSense. These cookies:
+              We may use cookies or similar technologies for page-level analytics and to serve advertisements through Google AdSense. These cookies:
             </p>
             <ul className="list-disc list-inside space-y-2 text-muted-foreground ml-4">
               <li>Help us understand website usage patterns</li>
@@ -79,7 +85,7 @@ const PrivacyPolicy = () => {
               PixelGuard does not share, sell, or transmit your images to any third parties. The only third-party services we use are:
             </p>
             <ul className="list-disc list-inside space-y-2 text-muted-foreground ml-4 mt-4">
-              <li><strong className="text-foreground">Google Analytics:</strong> For website analytics (page-level only)</li>
+              <li><strong className="text-foreground">Vercel Analytics:</strong> For website analytics (page-level only)</li>
               <li><strong className="text-foreground">Google AdSense:</strong> For displaying advertisements</li>
             </ul>
             <p className="text-muted-foreground leading-relaxed mt-4">
@@ -97,10 +103,10 @@ const PrivacyPolicy = () => {
           <section>
             <h2 className="text-2xl font-semibold mb-4">Your Rights</h2>
             <p className="text-muted-foreground leading-relaxed mb-4">
-              Since we don't collect or store your images, there is no personal image data to access, modify, or delete. For analytics data collected by Google Analytics, you can:
+              Since we don't collect or store your images, there is no personal image data to access, modify, or delete. For page-level analytics and advertising cookies, you can:
             </p>
             <ul className="list-disc list-inside space-y-2 text-muted-foreground ml-4">
-              <li>Use browser extensions to block Google Analytics</li>
+              <li>Use browser extensions to block analytics scripts</li>
               <li>Disable cookies in your browser</li>
               <li>Use private/incognito browsing mode</li>
             </ul>

@@ -79,7 +79,7 @@ const ControlsPanel = ({ originalWidth, originalHeight, settings, onSettingsChan
   };
 
   return (
-    <Card className="p-6 space-y-6">
+    <Card className="space-y-6 border-white/10 bg-white/[0.055] p-6 shadow-card backdrop-blur-xl">
       <div className="space-y-4">
         <div>
           <Label htmlFor="quality" className="text-base font-semibold">
@@ -92,10 +92,10 @@ const ControlsPanel = ({ originalWidth, originalHeight, settings, onSettingsChan
             step={1}
             value={[localSettings.quality]}
             onValueChange={(value) => updateSettings({ quality: value[0] })}
-            className="mt-2"
+            className="mt-3"
           />
           <p className="text-sm text-muted-foreground mt-1">
-            Higher quality = larger file size
+            Lower quality usually means a smaller image file size
           </p>
         </div>
 
@@ -107,7 +107,7 @@ const ControlsPanel = ({ originalWidth, originalHeight, settings, onSettingsChan
             value={localSettings.format}
             onValueChange={(value) => updateSettings({ format: value })}
           >
-            <SelectTrigger id="format" className="mt-2">
+            <SelectTrigger id="format" className="mt-2 rounded-xl border-white/10 bg-slate-950/40">
               <SelectValue />
             </SelectTrigger>
             <SelectContent>
@@ -129,7 +129,7 @@ const ControlsPanel = ({ originalWidth, originalHeight, settings, onSettingsChan
                 onCheckedChange={(checked) => updateSettings({ maintainAspectRatio: checked })}
               />
               <Label htmlFor="aspect-ratio" className="text-sm cursor-pointer">
-                Lock aspect ratio
+                Keep original aspect ratio
               </Label>
             </div>
           </div>
@@ -143,7 +143,7 @@ const ControlsPanel = ({ originalWidth, originalHeight, settings, onSettingsChan
                 min={1}
                 value={localSettings.targetWidth}
                 onChange={(e) => handleWidthChange(Number(e.target.value))}
-                className="mt-1"
+                className="mt-1 rounded-xl border-white/10 bg-slate-950/40"
               />
             </div>
             <div>
@@ -154,7 +154,7 @@ const ControlsPanel = ({ originalWidth, originalHeight, settings, onSettingsChan
                 min={1}
                 value={localSettings.targetHeight}
                 onChange={(e) => handleHeightChange(Number(e.target.value))}
-                className="mt-1"
+                className="mt-1 rounded-xl border-white/10 bg-slate-950/40"
               />
             </div>
           </div>
@@ -162,19 +162,19 @@ const ControlsPanel = ({ originalWidth, originalHeight, settings, onSettingsChan
           <div className="flex gap-2 flex-wrap">
             <button
               onClick={() => applyPreset('instagram')}
-              className="px-3 py-1.5 text-sm bg-secondary text-secondary-foreground rounded-md hover:bg-secondary/80 transition-colors"
+              className="rounded-full border border-white/10 bg-white/10 px-3 py-1.5 text-sm text-secondary-foreground transition-colors hover:bg-white/15"
             >
               Instagram (1080px)
             </button>
             <button
               onClick={() => applyPreset('web')}
-              className="px-3 py-1.5 text-sm bg-secondary text-secondary-foreground rounded-md hover:bg-secondary/80 transition-colors"
+              className="rounded-full border border-white/10 bg-white/10 px-3 py-1.5 text-sm text-secondary-foreground transition-colors hover:bg-white/15"
             >
               Web (1920px)
             </button>
             <button
               onClick={() => applyPreset('thumbnail')}
-              className="px-3 py-1.5 text-sm bg-secondary text-secondary-foreground rounded-md hover:bg-secondary/80 transition-colors"
+              className="rounded-full border border-white/10 bg-white/10 px-3 py-1.5 text-sm text-secondary-foreground transition-colors hover:bg-white/15"
             >
               Thumbnail (400px)
             </button>

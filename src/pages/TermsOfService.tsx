@@ -1,17 +1,23 @@
 import { Link } from 'react-router-dom';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
+import SEO from '@/components/SEO';
 
 const TermsOfService = () => {
   return (
-    <div className="min-h-screen bg-background">
+    <div className="min-h-screen overflow-x-hidden bg-background">
+      <SEO
+        title="Terms of Service — PixelGuard Image Compressor"
+        description="Review the terms for using PixelGuard's free browser image compressor, photo resizer, and local image optimization tool."
+        path="/terms-of-service"
+      />
       <Header />
 
-      <main className="container mx-auto px-4 sm:px-6 lg:px-8 py-12 max-w-4xl">
-        <h1 className="text-4xl font-bold mb-8">Terms of Service</h1>
+      <main className="container mx-auto max-w-4xl px-4 py-16 sm:px-6 sm:py-24 lg:px-8">
+        <h1 className="mb-8 text-4xl font-bold sm:text-6xl">Terms of Service</h1>
         <p className="text-muted-foreground mb-8">Last updated: {new Date().toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })}</p>
 
-        <div className="space-y-8 text-foreground">
+        <div className="glass-panel space-y-8 rounded-[2rem] p-6 text-foreground sm:p-8">
           <section>
             <h2 className="text-2xl font-semibold mb-4">1. Acceptance of Terms</h2>
             <p className="text-muted-foreground leading-relaxed">
@@ -27,7 +33,7 @@ const TermsOfService = () => {
             <ul className="list-disc list-inside space-y-2 text-muted-foreground ml-4">
               <li>Compress images to reduce file size</li>
               <li>Resize images to specific dimensions</li>
-              <li>Convert images between supported formats (JPEG, PNG, WebP, AVIF, BMP, TIFF)</li>
+              <li>Export optimized images as JPEG, PNG, or WebP where supported by your browser</li>
               <li>Process images locally without uploads to our servers</li>
             </ul>
           </section>
@@ -121,7 +127,7 @@ const TermsOfService = () => {
             </p>
             <ul className="list-disc list-inside space-y-2 text-muted-foreground ml-4">
               <li>Google AdSense for advertisements</li>
-              <li>Google Analytics for usage analytics</li>
+              <li>Vercel Analytics for page-level usage analytics</li>
             </ul>
             <p className="text-muted-foreground leading-relaxed mt-4">
               These services are governed by their own terms of service and privacy policies. We are not responsible for the content or practices of these third-party services.
@@ -163,7 +169,7 @@ const TermsOfService = () => {
             </p>
           </section>
 
-          <section className="mt-12 p-6 bg-muted rounded-lg">
+          <section className="mt-12 rounded-2xl border border-white/10 bg-white/[0.05] p-6">
             <p className="text-sm text-muted-foreground">
               By using PixelGuard, you acknowledge that you have read, understood, and agree to be bound by these Terms of Service.
             </p>

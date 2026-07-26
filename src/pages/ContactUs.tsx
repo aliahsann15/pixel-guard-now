@@ -4,30 +4,36 @@ import { Button } from '@/components/ui/button';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
+import SEO from '@/components/SEO';
 
 const ContactUs = () => {
   return (
-    <div className="min-h-screen bg-background">
+    <div className="min-h-screen overflow-x-hidden bg-background">
+      <SEO
+        title="Contact PixelGuard — Image Compressor Support"
+        description="Contact PixelGuard for help with private image compression, photo resizing, WebP export, feature requests, or browser-based image optimization support."
+        path="/contact"
+      />
       <Header />
 
-      <main className="container mx-auto px-4 sm:px-6 lg:px-8 py-12 max-w-4xl">
+      <main className="container mx-auto max-w-4xl px-4 py-16 sm:px-6 sm:py-24 lg:px-8">
         <div className="text-center mb-12">
-          <h1 className="text-4xl font-bold mb-4">Contact Us</h1>
+          <h1 className="mb-4 text-4xl font-bold sm:text-6xl">Contact PixelGuard Support</h1>
           <p className="text-muted-foreground text-lg">
-            Have questions or feedback? We'd love to hear from you.
+            Need help with private image compression, photo resizing, WebP export, or a technical issue? Send us a message.
           </p>
         </div>
 
         <div className="grid md:grid-cols-2 gap-6 mb-12">
-          <Card>
+          <Card className="glass-panel">
             <CardHeader>
               <div className="flex items-center gap-3">
-                <div className="p-2 bg-primary/10 rounded-lg">
-                  <Mail className="h-6 w-6 text-primary" />
+                <div className="rounded-2xl border border-white/10 bg-white/10 p-3">
+                  <Mail className="h-6 w-6 text-sky-300" />
                 </div>
                 <div>
                   <CardTitle>Email Us</CardTitle>
-                  <CardDescription>Send us an email anytime</CardDescription>
+                  <CardDescription>Questions about the image compressor</CardDescription>
                 </div>
               </div>
             </CardHeader>
@@ -44,15 +50,15 @@ const ContactUs = () => {
             </CardContent>
           </Card>
 
-          <Card>
+          <Card className="glass-panel">
             <CardHeader>
               <div className="flex items-center gap-3">
-                <div className="p-2 bg-primary/10 rounded-lg">
-                  <MessageSquare className="h-6 w-6 text-primary" />
+                <div className="rounded-2xl border border-white/10 bg-white/10 p-3">
+                  <MessageSquare className="h-6 w-6 text-sky-300" />
                 </div>
                 <div>
                   <CardTitle>Feedback</CardTitle>
-                  <CardDescription>Help us improve PixelGuard</CardDescription>
+                  <CardDescription>Suggest better compression and resizing features</CardDescription>
                 </div>
               </div>
             </CardHeader>
@@ -70,7 +76,7 @@ const ContactUs = () => {
           </Card>
         </div>
 
-        <Card className="mb-12">
+        <Card className="glass-panel mb-12">
           <CardHeader>
             <CardTitle className="text-2xl">Frequently Asked Questions</CardTitle>
             <CardDescription>Quick answers to common questions</CardDescription>
@@ -121,13 +127,13 @@ const ContactUs = () => {
           </CardContent>
         </Card>
 
-        <Card className="bg-gradient-primary text-white border-0">
+        <Card className="glass-panel border-primary/20 bg-gradient-subtle text-white">
           <CardContent className="pt-6">
             <div className="text-center">
               <Shield className="h-12 w-12 mx-auto mb-4 opacity-90" />
               <h3 className="text-2xl font-bold mb-2">Your Privacy Matters</h3>
               <p className="opacity-90 mb-4">
-                Remember, all image processing happens in your browser. We never see or store your images.
+                Every image you optimize is processed locally in your browser. PixelGuard does not upload, view, or store your files.
               </p>
               <Button asChild variant="secondary" size="lg">
                 <Link to="/privacy-policy">Read Our Privacy Policy</Link>

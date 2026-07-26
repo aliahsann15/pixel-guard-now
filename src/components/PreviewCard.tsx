@@ -35,8 +35,8 @@ const PreviewCard = ({
       animate={{ opacity: 1, scale: 1 }}
       transition={{ duration: 0.3 }}
     >
-      <Card className="overflow-hidden shadow-card">
-        <div className="relative aspect-video bg-secondary/20">
+      <Card className="overflow-hidden border-white/10 bg-white/[0.055] shadow-card backdrop-blur-xl">
+        <div className="relative aspect-video bg-slate-950/40">
           <img
             src={imageUrl}
             alt={title}
@@ -46,7 +46,7 @@ const PreviewCard = ({
             <Button
               size="icon"
               variant="destructive"
-              className="absolute top-2 right-2"
+              className="absolute top-3 right-3 rounded-xl"
               onClick={onRemove}
             >
               <X className="h-4 w-4" />
@@ -54,11 +54,11 @@ const PreviewCard = ({
           )}
         </div>
         
-        <div className="p-4 space-y-3">
+        <div className="p-5 space-y-4">
           <div className="flex items-center justify-between">
             <h3 className="font-semibold text-foreground">{title}</h3>
             {savings && (
-              <span className="text-success font-semibold text-sm bg-success/10 px-2 py-1 rounded">
+              <span className="rounded-full border border-success/20 bg-success/10 px-3 py-1 text-sm font-semibold text-success">
                 Saved {savings}
               </span>
             )}
@@ -78,7 +78,7 @@ const PreviewCard = ({
           {showDownload && onDownload && (
             <Button
               onClick={onDownload}
-              className="w-full bg-success text-success-foreground hover:bg-success/90"
+              className="w-full rounded-2xl bg-success text-success-foreground hover:bg-success/90"
             >
               <Download className="mr-2 h-4 w-4" />
               Download

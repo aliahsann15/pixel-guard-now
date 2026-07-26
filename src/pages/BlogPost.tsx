@@ -5,6 +5,7 @@ import Footer from '@/components/Footer';
 import { Button } from '@/components/ui/button';
 import { Card } from '@/components/ui/card';
 import { getBlogPostBySlug, blogPosts } from '@/data/blogPosts';
+import SEO from '@/components/SEO';
 
 const BlogPost = () => {
   const { slug } = useParams<{ slug: string }>();
@@ -13,6 +14,11 @@ const BlogPost = () => {
   if (!post) {
     return (
       <div className="min-h-screen bg-background">
+        <SEO
+          title="Blog Post Not Found — PixelGuard"
+          description="The PixelGuard image optimization article you requested could not be found. Browse image compression, resizing, and WebP guides."
+          path="/blog"
+        />
         <Header />
         <main className="container mx-auto px-4 py-12 max-w-4xl text-center">
           <h1 className="text-4xl font-bold text-foreground mb-4">Post Not Found</h1>
@@ -35,10 +41,15 @@ const BlogPost = () => {
     .slice(0, 2);
 
   return (
-    <div className="min-h-screen bg-background">
+    <div className="min-h-screen overflow-x-hidden bg-background">
+      <SEO
+        title={`${post.title} — PixelGuard Blog`}
+        description={post.excerpt}
+        path={`/blog/${post.slug}`}
+      />
       <Header />
 
-      <main className="container mx-auto px-4 py-12 max-w-4xl">
+      <main className="container mx-auto max-w-4xl px-4 py-16 sm:py-24">
         {/* Back Link */}
         <Link 
           to="/blog" 
@@ -51,7 +62,7 @@ const BlogPost = () => {
         {/* Article Header */}
         <article>
           <header className="mb-8">
-            <div className="inline-block px-3 py-1 bg-primary/10 text-primary text-sm font-medium rounded-full mb-4">
+            <div className="mb-4 inline-block rounded-full border border-primary/20 bg-primary/10 px-3 py-1 text-sm font-medium text-sky-300">
               {post.category}
             </div>
             <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-foreground mb-4 leading-tight">
@@ -71,7 +82,7 @@ const BlogPost = () => {
 
           {/* Article Content */}
           <div 
-            className="prose prose-lg dark:prose-invert max-w-none mb-12
+            className="prose prose-lg prose-invert glass-panel mb-12 max-w-none rounded-[2rem] p-6 sm:p-8
               prose-headings:text-foreground prose-headings:font-bold
               prose-h2:text-2xl prose-h2:mt-8 prose-h2:mb-4
               prose-h3:text-xl prose-h3:mt-6 prose-h3:mb-3
@@ -80,22 +91,22 @@ const BlogPost = () => {
               prose-strong:text-foreground
               prose-a:text-primary prose-a:no-underline hover:prose-a:underline
               prose-code:bg-muted prose-code:px-1.5 prose-code:py-0.5 prose-code:rounded prose-code:text-sm
-              prose-pre:bg-muted prose-pre:border prose-pre:border-border
-              prose-table:border-collapse prose-th:border prose-th:border-border prose-th:p-2 prose-th:bg-muted
-              prose-td:border prose-td:border-border prose-td:p-2"
+              prose-pre:bg-muted prose-pre:border prose-pre:border-white/10
+              prose-table:border-collapse prose-th:border prose-th:border-white/10 prose-th:p-2 prose-th:bg-muted
+              prose-td:border prose-td:border-white/10 prose-td:p-2"
             dangerouslySetInnerHTML={{ __html: post.content.replace(/\n/g, '<br />') }}
           />
 
           {/* CTA Section */}
-          <Card className="p-8 text-center bg-gradient-subtle mb-12">
+          <Card className="glass-panel mb-12 bg-gradient-subtle p-8 text-center">
             <h2 className="text-2xl font-bold text-foreground mb-3">
               Ready to Try PixelGuard?
             </h2>
             <p className="text-muted-foreground mb-6 max-w-2xl mx-auto">
-              Compress your images for free with complete privacy. No uploads, no servers, just fast client-side processing.
+              Reduce image file size, resize photos, and export web-friendly formats with private browser-based processing.
             </p>
             <Link to="/">
-              <Button size="lg" className="bg-primary hover:bg-primary/90">
+              <Button size="lg" className="rounded-2xl bg-white font-semibold text-slate-950 hover:bg-slate-100">
                 Start Compressing Now
               </Button>
             </Link>
@@ -110,8 +121,8 @@ const BlogPost = () => {
             <div className="grid md:grid-cols-2 gap-6">
               {relatedPosts.map((relatedPost) => (
                 <Link key={relatedPost.id} to={`/blog/${relatedPost.slug}`}>
-                  <Card className="p-6 hover:shadow-soft transition-shadow h-full">
-                    <div className="inline-block px-3 py-1 bg-primary/10 text-primary text-xs font-medium rounded-full mb-3">
+                  <Card className="glass-panel h-full p-6 transition-all duration-500 hover:-translate-y-1 hover:border-primary/40 hover:shadow-soft">
+                    <div className="mb-3 inline-block rounded-full border border-primary/20 bg-primary/10 px-3 py-1 text-xs font-medium text-sky-300">
                       {relatedPost.category}
                     </div>
                     <h3 className="text-lg font-semibold text-foreground mb-2 leading-tight">

@@ -6,9 +6,9 @@
 PixelGuard is a fast, secure, and 100% client-side image compression and resizing tool. All processing happens in the browser - no uploads, no servers, no tracking.
 
 ## Key Features
-- Compress images (JPEG, PNG, WebP, AVIF)
+- Compress images (JPEG, PNG, WebP, BMP, TIFF)
 - Resize images with custom dimensions
-- Batch processing support
+- One-image-at-a-time compression workflow
 - Privacy-first: files never leave your device
 - Free to use
 - No registration required
@@ -31,7 +31,7 @@ PixelGuard is a fast, secure, and 100% client-side image compression and resizin
 - Optimize images for web
 - Reduce file sizes for faster loading
 - Prepare images for social media
-- Batch resize photos
+- Resize photos with exact width and height controls
 - Compress without quality loss
 
 ## SEO Keywords
